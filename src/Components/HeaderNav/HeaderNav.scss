@@ -1,0 +1,50 @@
+
+
+.header {
+    font-family: 'Franklin';
+    .sub_header {
+        width: 100%;
+        height: 7vh;
+        // background-color: rgb(207, 207, 207);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 1px solid rgb(204, 204, 204);
+
+        .left {
+            width: 20%;
+            // background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .center {
+            width: 60%;
+            // background-color: red;
+            text-align: center;
+
+            h1 {
+                font-family: "Chomsky";
+                font-weight: 500;
+                font-size: 55px;
+            }
+        }
+
+        .right {
+            width: 20%;
+            height: 50%;
+            // background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .weather_icn {
+                align-self: flex-start;
+                color: rgba(0, 0, 240, 0.63);
+                margin-right: 5px;
+            }
+        }
+    }
+}

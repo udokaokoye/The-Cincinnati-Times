@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,CAAC;EACf,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,MAAM;EAEd,gBAAgB,EAAE,OAAO;EAEzB,MAAM,EAAE,mBAAmB;EAC3B,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;CACtB",
+    "sources": [
+        "LineBreaker.scss"
+    ],
+    "names": [],
+    "file": "LineBreaker.css"
+}

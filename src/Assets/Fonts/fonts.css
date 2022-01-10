@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Franklin';
+    src: local('MyFont'), url(./franklin.ttf) format('truetype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
+  @font-face {
+    font-family: 'Postoni';
+    src: local('MyFont'), url(./postoni.ttf) format('truetype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
+  @font-face {
+    font-family: 'Chomsky';
+    src: local('MyFont'), url(./Chomsky.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }

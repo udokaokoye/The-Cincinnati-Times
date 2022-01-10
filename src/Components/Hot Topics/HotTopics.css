@@ -1,0 +1,24 @@
+.hot_topics {
+  width: 30%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-weight: bold;
+  margin-top: 20px;
+  font-family: 'Franklin';
+}
+
+.hot_topics .hot_topics_intro {
+  color: red;
+  font-weight: bold;
+}
+
+.hot_topics .topics {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=HotTopics.css.map */
