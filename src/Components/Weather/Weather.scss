@@ -1,0 +1,21 @@
+.weather_container {
+    width: 100%;
+    // background-color: #474545;
+
+    .days {
+            .seemore {
+                color: purple;
+            }
+        .day {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+
+            span {
+                font-weight: bold;
+                color: rgb(73, 73, 73);
+            }
+        }
+    }
+}

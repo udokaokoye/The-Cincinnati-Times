@@ -6,9 +6,9 @@ const LineBreaker = ({mode, width, margin}) => {
             <hr 
             className='line_breaker_line' 
             style={{
-                borderWidth: mode == 'thick' ? 3 : 0.9, 
-                borderColor: mode == 'thick' ? 'black' : '#e0e0db',
-                backgroundColor: mode == 'thick' ? 'black' : '#e0e0db',
+                borderWidth: mode == 'thick' ? 1.1 : 0.5, 
+                borderColor: mode == 'thick' ? '#272727' : '#e0e0db',
+                backgroundColor: mode == 'thick' ? '#272727' : '#e0e0db',
                 width: width !== 'full' ? `${width + '%'}` : '100%',
                 marginTop: margin ? `${margin + 'px'}` : 10,
                 marginBottom: margin ? `${margin + 'px'}` : 10

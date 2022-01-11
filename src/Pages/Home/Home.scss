@@ -43,6 +43,7 @@ p, span {
             .showcase {
                 width: 100%;
                 height: auto;
+                // border-right: 1px solid #e0e0db;
                 .showcase_top {
                     width: 100%;
                     height: 50%;
@@ -87,7 +88,7 @@ p, span {
                     .showcase_main {
                         width: 73%;
                         height: 100%;
-                        // background-color: gold;
+                        background-color: gold;
                         position: relative;
 
                         .show_main_media {
@@ -160,9 +161,201 @@ p, span {
         }
 
         .right_bar {
-            width: 27%;
-            height: 0;
-            background-color: firebrick;
+            width: 25.5%;
+            height: auto;
+            // background-color: firebrick;
+            padding: 0px 10px;
+            border-left: 1px solid #d6d6d6;
+
+            .right_bar_opinion {
+                .right_opionion_bar {
+                    margin-top: 10px;
+                    display: flex;
+                    align-items: center;
+                    h3 {
+                        font-family: 'Roboto';
+                        font-weight: bold;
+                        font-size: 17px;
+                    }
+                }
+
+                .right_bar_opinion_content {
+                    p {
+                        font-family: 'Postoni';
+                        font-weight: lighter;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .covid_tracker {
+                .covid_tracker_bar {
+                    font-family: 'Roboto';
+                    display: flex;
+                    align-items: center;
+                    h3 {
+                        font-family: 'Roboto';
+                        font-weight: bold;
+                        font-size: 17px;
+                    }
+                }
+
+                .covid_tracker_content {
+                    .covid_tracker_cases, .covid_tracker_deaths {
+                        font-family: 'Roboto';
+                        font-weight: 500;
+                        &:first-child {
+                            color: purple;
+                        }
+                        width: 70%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 17px;
+                    }
+
+                    .covid_tracker_vaccine {
+                        h3 {
+                            font-family: 'Roboto';
+                            font-weight: bold;
+                            font-size: 14px;
+                            color: purple;
+                            margin-bottom: 10px;
+                        }
+
+                        small {
+                            font-family: 'Roboto';
+                            font-size: 10px;
+                            font-style: italic;
+                            color: #666666;
+                        }
+
+                        .find_shot {
+                            font-size: 14px;
+                            margin-top: 15px;
+                            font-weight: bold;
+                            color: purple;
+                        }
+
+                        .vaccine_toll {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            .figure {
+                                width: 10%;
+                                font-size: 15px;
+                                color: purple;
+                            }
+
+                            .toll_color_code {
+                                width: 87%;
+                                height: 17px;
+                                background-color: rgb(194, 194, 194);
+                                margin-left: 8px;
+                                position: relative;
+
+                                .ovrly_cnt {
+                                    position: absolute;
+                                    height: inherit;
+                                    width: 50%;
+                                    background-color: purple;
+                                }
+                            }
+                        }
+                    }
+                }
+                    
+            }
+
+            .right_bar_subscribe {
+                display: flex;
+                flex-direction: column;
+                h3 {
+                    font-size: 17px;
+                    font-family: 'Roboto';
+                    font-weight: bold;
+                }
+
+                .subscribe_intro{
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                .right_bar_subscribe_input {
+                    width: 70%;
+                    height: 40px;
+                    align-self: center;
+                    margin-top: 15px;
+                    border-radius: 4px;
+                    border: 1px solid #d6d6d6;
+                    padding-left: 10px;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .right_bar_subscribe_btn {
+                    width: 50%;
+                    height: 35px;
+                    margin-top: 10px;
+                    align-self: center;
+                    color: white;
+                    background-color: purple;
+                    border-radius: 4px;
+                    border: none;
+                }
+            }
+
+            .right_bar_weather {
+                .weather_br_location {
+                    display: flex;
+                    justify-content: space-between;
+                    h3 {
+                        font-family: 'Roboto';
+                        font-size: 17px;
+                    }
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .right_vaccine_finder {
+                h3 {
+                    font-family: 'Roboto';
+                    font-weight: bold;
+                    font-size: 17px;
+                }
+
+                p {
+                    text-align: center;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+
+                .zipcode_field {
+                    width: 70%;
+                    height: 40px;
+                    align-self: center;
+                    margin-top: 15px;
+                    border-radius: 4px;
+                    border: 1px solid #d6d6d6;
+                    padding-left: 10px;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                button {
+                    width: 50%;
+                    height: 35px;
+                    margin-top: 10px;
+                    align-self: center;
+                    color: white;
+                    background-color: purple;
+                    border-radius: 4px;
+                    border: none;
+                }
+            }
         }
     }
 
