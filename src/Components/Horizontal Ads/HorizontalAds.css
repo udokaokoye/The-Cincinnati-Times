@@ -1,0 +1,31 @@
+.horzAds_container {
+  width: 100%;
+  height: 20vh;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  position: relative;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.horzAds_container .ads_sign {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: url("../../Assets/Ads/ads_blinker.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+}
+
+.horzAds_container .ads {
+  width: 100%;
+  height: 100%;
+  background: url("../../Assets/Ads/ads2.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/*# sourceMappingURL=HorizontalAds.css.map */

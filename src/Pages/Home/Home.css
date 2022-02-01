@@ -302,7 +302,7 @@ p, span {
 }
 
 .container .container-wrapper .right_bar .right_bar_subscribe .right_bar_subscribe_input {
-  width: 70%;
+  width: 100%;
   height: 40px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -361,7 +361,7 @@ p, span {
 }
 
 .container .container-wrapper .right_bar .right_vaccine_finder .zipcode_field {
-  width: 70%;
+  width: 100%;
   height: 40px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -387,5 +387,29 @@ p, span {
   background-color: purple;
   border-radius: 4px;
   border: none;
+}
+
+.container .container-wrapper .right_bar .right_ads_cnt {
+  width: 100%;
+  height: 60vh;
+  margin-top: 30px;
+  background: url("../../Assets/Ads/ads4.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  cursor: pointer;
+}
+
+.container .container-wrapper .right_bar .right_ads_cnt .ads_sign {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: url("../../Assets/Ads/ads_blinker.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=Home.css.map */

@@ -35,6 +35,8 @@ const TopStories = () => {
                             <p>L.A. County sees delays in ambulance response to 911 calls as COVID-19 taxes hospitals</p>
                         </div>
                     </div>
+
+                    <div className="ads_left"><div className="ads_sign"></div></div>
                 </div>
                 <div className="topstor_main_content">
                     <div className="topstor_section_1">
@@ -62,10 +64,6 @@ const TopStories = () => {
                         
                         <div className="side_right">
 
-                            <div className="side_right_content">
-                                <h1>Larry Elder won’t seek rematch against Gov. Gavin Newsom in 2022 race</h1>
-                                <p>The Los Angeles native said that he has instead formed a political action committee to help Republicans running for the Senate and House.</p>
-                            </div>
                             <div className="side_right_content">
                                 <h1>Larry Elder won’t seek rematch against Gov. Gavin Newsom in 2022 race</h1>
                                 <p>The Los Angeles native said that he has instead formed a political action committee to help Republicans running for the Senate and House.</p>
@@ -113,11 +111,7 @@ const TopStories = () => {
                             </div>
                             <LineBreaker width='95' />
 
-                            <div className="side_left_content">
-                                <h4 className="side_left_content_title">A year after Jan. 6, Congress more deeply divided than ever</h4>
-                                <p className="side_left_content_description">College students compare the remote start of 2022 to March 2020, when a two-week shutdown turned into a months-long hiatus from campus.</p>
-                            </div>
-                            <LineBreaker width='95' />
+                            
                         </div>
                         <div className="side_right">
                             <div className="side_right_content">
@@ -144,13 +138,7 @@ const TopStories = () => {
                             </div>
                             <LineBreaker width='95' margin='20' />
 
-                            <div className="side_right_content">
-                                <div className="side_right_content_media">
-                                    <img src={require('../../Assets/Demo/download22.png')} alt="" />
-                                </div>
-                                <h3 className="side_right_content_title">Listen: Mahershala Ali and Benjamin Cleary on sci-fi drama ‘Swan Song’</h3>
-                            </div>
-                            <LineBreaker width='95' margin='20' />
+                            
 
                             
                         </div>

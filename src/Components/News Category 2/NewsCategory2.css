@@ -1,0 +1,106 @@
+.newscategory_container .newscatg_bar h3 {
+  font-family: 'Franklin';
+  font-size: 20px;
+}
+
+.newscategory_container .newscatg_wrapper {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.newscategory_container .newscatg_wrapper .main_content2 {
+  width: 80%;
+  height: 100%;
+  border-right: 1px solid #e0e0db;
+  padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.newscategory_container .newscatg_wrapper .main_content2 .main_show {
+  width: 75%;
+  padding-left: 10px;
+}
+
+.newscategory_container .newscatg_wrapper .main_content2 .main_show .media {
+  width: 100%;
+  height: 350PX;
+}
+
+.newscategory_container .newscatg_wrapper .main_content2 .main_show .media img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.newscategory_container .newscatg_wrapper .main_content2 .main_show .title {
+  height: 25%;
+  padding-top: 15px;
+}
+
+.newscategory_container .newscatg_wrapper .main_content2 .links_lst {
+  width: 35%;
+  padding-right: 10px;
+}
+
+.newscategory_container .newscatg_wrapper .main_content2 .links_lst .links_wrap {
+  margin-bottom: 15px;
+}
+
+.newscategory_container .newscatg_wrapper .main_content2 .links_lst .links_wrap h3 {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.newscategory_container .newscatg_wrapper .main_content2 .links_lst .links_wrap p {
+  font-size: 15px;
+  color: #646464;
+  cursor: pointer;
+}
+
+.newscategory_container .newscatg_wrapper .side_content2 {
+  width: 20%;
+  height: 100%;
+  padding-left: 10px;
+}
+
+.newscategory_container .newscatg_wrapper .side_content2 li {
+  font-size: 20px;
+  font-family: 'Franklin';
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.newscategory_container .newscatg_wrapper .side_content2 .links_lst {
+  padding-top: 5px;
+}
+
+.newscategory_container .newscatg_wrapper .side_content2 .links_lst p {
+  margin-bottom: 10px;
+  font-family: 'Postoni';
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.newscategory_container .newscatg_wrapper .side_content2 .links_lst p span {
+  font-size: 12px;
+  font-style: italic;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: rgba(0, 0, 0, 0.61);
+}
+/*# sourceMappingURL=NewsCategory2.css.map */

@@ -1,0 +1,49 @@
+.gridcatg_container {
+  width: 100%;
+}
+
+.gridcatg_container .gridcatg_bar h3 {
+  font-family: 'Franklin';
+  font-size: 20px;
+}
+
+.gridcatg_container .gridcatg_main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gridcatg_container .gridcatg_main .item {
+  width: 18%;
+  height: auto;
+  border-right: 1px solid #e0e0db;
+  padding-right: 10px;
+}
+
+.gridcatg_container .gridcatg_main .item:last-child {
+  padding-right: 0px;
+}
+
+.gridcatg_container .gridcatg_main .item .media {
+  width: 100%;
+  height: 160px;
+}
+
+.gridcatg_container .gridcatg_main .item .media img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gridcatg_container .gridcatg_main .item .title {
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Postoni';
+  margin-top: 10px;
+}
+/*# sourceMappingURL=GridCategory.css.map */

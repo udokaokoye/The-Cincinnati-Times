@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import HeaderNav from './Components/HeaderNav/HeaderNav'
+import Footer from './Components/Footer/Footer';
 function App() {
   return (
     <Router>
@@ -12,6 +13,7 @@ function App() {
         <Route key={'/'} exact path={'/'}>
           <HeaderNav />
           <Home/>
+          <Footer />
         </Route>
       </React.Fragment>
     </Router>

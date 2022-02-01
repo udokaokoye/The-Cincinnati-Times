@@ -55,9 +55,33 @@
      object-fit: cover;
 }
 
+.topstories_container .topstor_content_wrapper .topstor_side_content .ads_left {
+  position: relative;
+  margin-top: 35px;
+  width: 100%;
+  height: 70vh;
+  background: url("../../Assets/Ads/ads5.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.topstories_container .topstor_content_wrapper .topstor_side_content .ads_left .ads_sign {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: url("../../Assets/Ads/ads_blinker.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+}
+
 .topstories_container .topstor_content_wrapper .topstor_main_content {
   width: 73%;
-  height: 50vh;
+  height: auto;
 }
 
 .topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_1 {
@@ -152,7 +176,7 @@
 
 .topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_2 {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
