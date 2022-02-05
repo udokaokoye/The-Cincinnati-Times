@@ -6,10 +6,10 @@ import TopStories from '../../Components/Top Stories/TopStories'
 import './Home.css'
 import { faArrowRight, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import Weather from '../../Components/Weather/Weather';
-import NewsCategory from '../../Components/News Category/NewsCategory';
 import NewsCategory2 from '../../Components/News Category 2/NewsCategory2';
 import GridCategory from '../../Components/Grid Category/GridCategory';
 import HorizontalAds from '../../Components/Horizontal Ads/HorizontalAds';
+import HomeNewsCategory from '../../Components/News Category/HomeNewsCategory';
 const Home = () => {
     const dummy = [1,2,3,4,5,6,7,8,9,0]
     return (
@@ -162,18 +162,18 @@ const Home = () => {
 
             <LineBreaker mode='thick' width='full' />
             <div className="categories">
-                <NewsCategory categoryName={"Politcs"} />
+                <HomeNewsCategory categoryName={"Politcs"} />
 
                 <LineBreaker mode='thick' width='full' margin={"25"} />
 
                 <NewsCategory2 categoryName={'Sports'} />
 
                 <LineBreaker mode='thick' width='full' margin={"25"} />
-                <GridCategory categoryName={"Cincy Times Cooking"} />
+                <GridCategory placement='home' categoryName={"Cincy Times Cooking"} />
 
                     <br />
                 <LineBreaker mode='thick' width='full' margin={"25"} />
-                <NewsCategory categoryName={"Entertainment"} />
+                <HomeNewsCategory categoryName={"Entertainment"} />
 
                 <HorizontalAds />
 

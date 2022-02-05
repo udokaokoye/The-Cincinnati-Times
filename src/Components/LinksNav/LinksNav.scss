@@ -59,13 +59,13 @@
 
     .right {
         background-color: rgb(39, 39, 39);
-        color: white;
+        color: white !important;
         width: fit-content;
         padding: 0px 25px;
         height: inherit;
         margin-right: 20px;
         display: flex;
-        font-family: $franklin;
+        font-family: 'Franklin';
         font-weight: bold;
         justify-content: center;
         align-items: center;

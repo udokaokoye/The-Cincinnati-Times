@@ -4,6 +4,7 @@ import './HeaderNav.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faCloudRain, faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
 import HotTopics from '../Hot Topics/HotTopics';
+import { Link } from 'react-router-dom';
 
 const HeaderNav = () => {
     return (
@@ -14,7 +15,7 @@ const HeaderNav = () => {
                     <p>Wednesday, December 22, 2021</p>
                 </div>
                 <div className="center">
-                    <h1>The Cincinnati Times</h1>
+                   <Link to={'/'} className='router_link'><h1>The Cincinnati Times</h1></Link> 
                 </div>
                 <div className="right">
                     <FontAwesomeIcon icon={faCloudRain} className='weather_icn' /> 32°F

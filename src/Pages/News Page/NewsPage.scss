@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+
+.newsPage_container {
+    max-width: 1250px;
+    margin: 0 auto;
+    height: auto;
+    margin-top: 50px;
+
+    .newsPage_wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+
+        .news_title {
+            font-family: 'PT Serif';
+            font-style: italic;
+            font-size: 40px;
+            line-height: 46px;
+            font-weight: 700;
+        }
+
+        .news_summary {
+            margin-top: 15px;
+            font-family: 'Gideon Roman';
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 30px;
+        }
+
+        .top_socialmedia {
+            width: 70%;
+            display: flex;
+
+            .icn {
+                font-size: 15px;
+                margin-left: 15px;
+                width: 35px;
+                height: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #EEEEEE;
+                border-radius: 50%;
+                cursor: pointer;
+
+                &:first-child {
+                    margin-left: 0px;
+                }
+            }
+        }
+
+        .media_1 {
+            width: 100%;
+            height: 50vh;
+            background: #ee4f;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .media_description {
+                font-family: 'roboto';
+                font-size: 13px;
+                color: rgb(119, 119, 119);
+                font-style: italic;
+            }
+        }
+
+        .author {
+            width: 40%;
+            height: 6vh;
+            // background: orangered;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+
+            .auth_img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            }    
+            .auth_name {
+                display: block;
+                font-size: 15px;
+                font-family: 'roboto';
+                font-weight: 500;
+                margin-left: 5px;
+            }
+        }
+
+        .date_time {
+            font-size: 13px;
+            font-family: 'roboto';
+        }
+
+        .news_text {
+            font-size: 18px;
+            line-height: 30px;
+            margin-top: 35px;
+            font-family: 'Balsamiq Sans';
+        }
+
+        .comments_socials {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+
+            .btn {
+                width: 30% ;
+
+                button {
+                    width: 100%;
+                    height: 40px;
+                    background-color: purple;
+                    font-weight: bold;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+
+            .btm_socialmedia {
+                width: 70%;
+                display: flex;
+                margin-left: 45px;
+    
+                .icn {
+                    font-size: 15px;
+                    margin-left: 15px;
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #EEEEEE;
+                    border-radius: 50%;
+                    cursor: pointer;
+    
+                    &:first-child {
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

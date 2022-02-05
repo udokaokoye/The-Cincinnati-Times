@@ -13,20 +13,20 @@ const LinksNav = () => {
                     <div className="search_icn"><FontAwesomeIcon icon={faSearch} /></div>
                     <div className="menu_bar"><FontAwesomeIcon icon={faBars} /></div>
                 </div>
-                <Link className='link with_flag'>OHIO 
+                <Link to={'/category/ohio'} className='link with_flag'>OHIO 
                 <span className='flag_container'><img className='ohio_state_flag' src={require('../../Assets/Images/Icons/Flag_Map_of_Ohio.svg.png')} /></span>
                 </Link>
-                <Link className='link'> Entertainment</Link>
-                <Link className='link'>Crime</Link>
-                <Link className='link'>Sports</Link>
-                <Link className='link'>Business</Link>
-                <Link className='link'>Lifestyle</Link>
-                <Link className='link'>Politics</Link>
-                <Link className='link'>Travel</Link>
-                <Link className='link'>World & Nation</Link>
+                <Link to={'/category/entertainment'} className='link'> Entertainment</Link>
+                <Link to={'/category/crime'} className='link'>Crime</Link>
+                <Link to={'/category/sport'} className='link'>Sports</Link>
+                <Link to={'/category/business'} className='link'>Business</Link>
+                <Link to={'/category/lifestyle'} className='link'>Lifestyle</Link>
+                <Link to={'/category/politcs'} className='link'>Politics</Link>
+                <Link to={'/category/travel'} className='link'>Travel</Link>
+                <Link to={'/category/world'} className='link'>World & Nation</Link>
             </div>
             <div className="right">
-                <span>Sign In  <FontAwesomeIcon icon={faUser} /></span>
+               <Link to={'/auth'} style={{color: 'white'}} className='router_link'><span>Sign In  <FontAwesomeIcon icon={faUser} /></span></Link>
             </div>
         </div>
     )

@@ -20,12 +20,14 @@
 
             &:last-child {
                 padding-right: 0px;
+                border-right: none;
             }
             // background: red;
 
             .media {
                 width: 100%;
-                height: 160px;
+                // max-height: 110px;
+                overflow: hidden;
 
                 img {
                     width: 100%;

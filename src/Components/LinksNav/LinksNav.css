@@ -80,7 +80,7 @@
 
 .links_nav .right {
   background-color: #272727;
-  color: white;
+  color: white !important;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -90,7 +90,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Franklin";
+  font-family: 'Franklin';
   font-weight: bold;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

@@ -26,11 +26,12 @@
 
 .gridcatg_container .gridcatg_main .item:last-child {
   padding-right: 0px;
+  border-right: none;
 }
 
 .gridcatg_container .gridcatg_main .item .media {
   width: 100%;
-  height: 160px;
+  overflow: hidden;
 }
 
 .gridcatg_container .gridcatg_main .item .media img {

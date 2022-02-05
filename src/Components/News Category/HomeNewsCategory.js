@@ -1,7 +1,7 @@
 import React from 'react';
 import LineBreaker from '../Line Breaker/LineBreaker';
-import './NewsCategory.css';
-const NewsCategory = ({categoryName}) => {
+import './HomeNewsCategory.css';
+const HomeNewsCategory = ({categoryName}) => {
   return <div className='newscategory_container'>
       <div className="newscatg_bar">
           <h3>{categoryName}.</h3>
@@ -62,4 +62,4 @@ const NewsCategory = ({categoryName}) => {
   </div>;
 };
 
-export default NewsCategory;
+export default HomeNewsCategory;

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+
+.auth_container {
+    width: 100%;
+    height: auto;
+    .auth_nav {
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgb(133, 133, 133);
+
+        h3 {
+            font-size: 33px;
+            font-family: 'Chomsky';
+            font-weight: lighter;
+        }
+
+    }
+
+    .auth_wrapper {
+        width: 300px;
+        margin: 0 auto;
+        // background: red;
+        margin-top: 35px;
+
+        p {
+            font-family: 'Gideon Roman';
+            font-weight: bold;
+            text-align: center;
+            font-size: 20px;
+        }
+        small {
+            display: block;
+            margin-top: 25px;
+            font-family: 'roboto';
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            height: 40px;
+            border: 1px solid rgb(209, 209, 209);
+            margin-top: 5px;
+            margin-bottom: 15px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            height: 40px;
+            background: #000;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+    }
+
+    .or_divider {
+        font-weight: 200;
+        text-align: center;
+        margin: 20px 0px;
+    }
+
+    .pol_stat {
+        font-weight: lighter !important;
+        font-size: 14px !important;
+    }
+
+    .social_login {
+        width: 100%;
+        margin-top: 25px;
+        
+        button {
+            background-color: transparent;
+            color: black;
+            font-family: 'roboto';
+            font-weight: bold;
+            border: 1px solid rgb(187, 187, 187);
+            margin-bottom: 10px;
+        }
+    }
+}

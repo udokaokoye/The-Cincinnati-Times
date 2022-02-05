@@ -1,0 +1,197 @@
+.topstories_container {
+  .topstor_bar {
+    h3 {
+      font-family: "Franklin";
+      font-size: 17px;
+    }
+  }
+
+  .topstor_content_wrapper {    
+    width: 100%;
+    height: auto;
+    // background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .topstor_side_content {
+      width: 27%;
+      height: 100%;
+      padding: 0px 10px;
+      // background-color: saddlebrown;
+      // border-right: 1px solid #e0e0db;
+
+      .side_content_w_related {
+        h1 {
+          font-size: 25px;
+          margin-bottom: 10px;
+        }
+
+        .side_content_related {
+          p {
+            font-size: 14px;
+            cursor: pointer;
+            &:first-child {
+              font-weight: bold;
+              cursor: initial;
+            }
+          }
+        }
+      }
+
+      .side_content_w_img {
+        h3 {
+          cursor: pointer;
+        }
+        .side_content_media {
+          width: 100%;
+          height: 150px;
+          // background-color: black;
+          margin-bottom: 10px;
+          img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .ads_left {
+        position: relative;
+        margin-top: 35px;
+        width: 100%;
+        height: 70vh;
+        background: url("../../Assets/Ads/ads5.gif");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+
+        .ads_sign {
+          position: absolute;
+          width: 70px;
+          height: 70px;
+          background: url("../../Assets/Ads/ads_blinker.gif");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+
+    .topstor_main_content {
+      width: 73%;
+      height: auto;
+      // background-color: salmon;
+
+      .topstor_section_1 {
+        width: 100%;
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .side_left {
+          width: 60%;
+          height: 100%;
+          // background-color: rgb(255, 98, 25);
+          border-left: 1px solid #e0e0db;
+          border-right: 1px solid #e0e0db;
+          padding: 0px 10px;
+          .side_left_media {
+            width: 100%;
+            height: 45%;
+            // background-color: yellow;
+            position: relative;
+            margin-bottom: 10px;
+
+            //     .gradient {
+            //         position: absolute;
+            //         width: 100%;
+            //         height: 50%;
+            //         bottom: 0;
+            //         padding-bottom: 3px;
+            //         background-image:
+            //         linear-gradient(
+            //           to top,
+            //           rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.63), #00000000
+            //         );
+            //         display: flex;
+            //         align-items: flex-end;
+
+            //         .side_left_title {
+            //             color: white;
+            //             font-family: 'Postoni';
+            //             font-weight: 200;
+            //             font-size: 18px;
+            //             // text-align: justify;
+            //             padding: 2px 5px;
+            //             cursor: pointer;
+            //         }
+
+            // }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .side_left_content_title {
+            // font-family: 'Franklin';
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            font-size: 20px;
+          }
+
+          .side_left_content {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-top: 15px;
+
+            .side_left_catgr_1,
+            .side_left_catgr_2 {
+              .catgr_title {
+                font-family: "Postoni";
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 10px;
+              }
+
+              .catgr_content {
+                margin-bottom: 10px;
+                padding-left: 15px;
+                font-size: 12px;
+                cursor: pointer;
+                border-left: 1px solid rgba(0, 0, 0, 0.192);
+              }
+            }
+          }
+        }
+
+        .side_right {
+          width: 40%;
+          height: 100%;
+          // background-color: skyblue;
+          padding: 0px 10px;
+          overflow: hidden;
+          // border-left: 1px solid #e0e0db;
+          .side_right_content {
+            margin-bottom: 20px;
+            // padding: 10px;
+            h1 {
+              font-size: 20px;
+              margin-bottom: 5px;
+              cursor: pointer;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

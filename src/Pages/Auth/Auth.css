@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap");
+.auth_container {
+  width: 100%;
+  height: auto;
+}
+
+.auth_container .auth_nav {
+  width: 100%;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #858585;
+}
+
+.auth_container .auth_nav h3 {
+  font-size: 33px;
+  font-family: 'Chomsky';
+  font-weight: lighter;
+}
+
+.auth_container .auth_wrapper {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.auth_container .auth_wrapper p {
+  font-family: 'Gideon Roman';
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+}
+
+.auth_container .auth_wrapper small {
+  display: block;
+  margin-top: 25px;
+  font-family: 'roboto';
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.auth_container .auth_wrapper input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #d1d1d1;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.auth_container .auth_wrapper input:focus {
+  outline: none;
+}
+
+.auth_container .auth_wrapper button {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: #000;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.auth_container .or_divider {
+  font-weight: 200;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.auth_container .pol_stat {
+  font-weight: lighter !important;
+  font-size: 14px !important;
+}
+
+.auth_container .social_login {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.auth_container .social_login button {
+  background-color: transparent;
+  color: black;
+  font-family: 'roboto';
+  font-weight: bold;
+  border: 1px solid #bbbbbb;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=Auth.css.map */

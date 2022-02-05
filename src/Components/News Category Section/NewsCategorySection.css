@@ -1,5 +1,5 @@
 .topstories_container .topstor_bar h3 {
-  font-family: 'Franklin';
+  font-family: "Franklin";
   font-size: 17px;
 }
 
@@ -137,14 +137,16 @@
   margin-top: 15px;
 }
 
-.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_1 .side_left .side_left_content .side_left_catgr_1 .catgr_title, .topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_1 .side_left .side_left_content .side_left_catgr_2 .catgr_title {
-  font-family: 'Postoni';
+.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_1 .side_left .side_left_content .side_left_catgr_1 .catgr_title,
+.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_1 .side_left .side_left_content .side_left_catgr_2 .catgr_title {
+  font-family: "Postoni";
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_1 .side_left .side_left_content .side_left_catgr_1 .catgr_content, .topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_1 .side_left .side_left_content .side_left_catgr_2 .catgr_content {
+.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_1 .side_left .side_left_content .side_left_catgr_1 .catgr_content,
+.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_1 .side_left .side_left_content .side_left_catgr_2 .catgr_content {
   margin-bottom: 10px;
   padding-left: 15px;
   font-size: 12px;
@@ -172,104 +174,4 @@
 .topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_1 .side_right .side_right_content p {
   font-size: 14px;
 }
-
-.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_2 {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_2 .side_left {
-  width: 60%;
-  height: 100%;
-  border-left: 1px solid #e0e0db;
-  border-right: 1px solid #e0e0db;
-}
-
-.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_2 .side_left .side_left_content {
-  padding: 0px 10px;
-  margin-bottom: 35px;
-}
-
-.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_2 .side_left .side_left_content:first-child {
-  margin-bottom: 0;
-}
-
-.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_2 .side_left .side_left_content:first-child .side_left_content_media {
-  display: block;
-  width: 100%;
-  height: 200px;
-  margin-bottom: 10px;
-}
-
-.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_2 .side_left .side_left_content:first-child .side_left_content_media img {
-  width: inherit;
-  height: inherit;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_2 .side_left .side_left_content:first-child .side_left_content_title {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_2 .side_left .side_left_content:first-child .side_left_content_description {
-  font-size: 14px;
-  font-family: 'Franklin';
-  font-weight: 600;
-}
-
-.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_2 .side_left .side_left_content .side_left_content_media {
-  display: none;
-}
-
-.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_2 .side_left .side_left_content .side_left_content_title {
-  font-size: 20px;
-  font-weight: 200;
-  margin-bottom: 5px;
-}
-
-.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_2 .side_left .side_left_content .side_left_content_description {
-  font-size: 16px;
-  font-family: 'Franklin';
-  font-weight: 600;
-  color: #747474;
-}
-
-.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_2 .side_right {
-  width: 40%;
-  height: 100%;
-}
-
-.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_2 .side_right .side_right_content {
-  padding: 0px 10px;
-}
-
-.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_2 .side_right .side_right_content .side_right_content_media {
-  width: 100%;
-  height: 150px;
-  margin-bottom: 5px;
-}
-
-.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_2 .side_right .side_right_content .side_right_content_media img {
-  width: inherit;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.topstories_container .topstor_content_wrapper .topstor_main_content .topstor_section_2 .side_right .side_right_content .side_right_content_title {
-  font-weight: 200;
-  font-size: 18px;
-}
-/*# sourceMappingURL=TopStories.css.map */
+/*# sourceMappingURL=NewsCategorySection.css.map */
