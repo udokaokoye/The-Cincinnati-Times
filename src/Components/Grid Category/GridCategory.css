@@ -36,7 +36,7 @@
 
 .gridcatg_container .gridcatg_main .item .media img {
   width: 100%;
-  height: 100%;
+  height: inherit;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -46,5 +46,41 @@
   font-size: 20px;
   font-family: 'Postoni';
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 1316px) {
+  .gridcatg_container {
+    width: 94%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .gridcatg_container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .gridcatg_container {
+    display: block;
+  }
+  .gridcatg_container .gridcatg_main {
+    display: block;
+  }
+  .gridcatg_container .gridcatg_main .item {
+    width: 100%;
+    min-height: 350px;
+    border-bottom: 1px solid #000;
+    margin-top: 18px;
+  }
+  .gridcatg_container .gridcatg_main .item .media {
+    height: 80% !important;
+    overflow: hidden !important;
+  }
+  .gridcatg_container .gridcatg_main .item .title {
+    font-size: 23px;
+    margin-top: 15px;
+  }
 }
 /*# sourceMappingURL=GridCategory.css.map */

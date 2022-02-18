@@ -1,0 +1,88 @@
+.covid_tracker .covid_tracker_bar {
+  font-family: "Roboto";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.covid_tracker .covid_tracker_bar h3 {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.covid_tracker .covid_tracker_content .covid_tracker_cases,
+.covid_tracker .covid_tracker_content .covid_tracker_deaths {
+  font-family: "Roboto";
+  font-weight: 500;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 17px;
+}
+
+.covid_tracker .covid_tracker_content .covid_tracker_cases:first-child,
+.covid_tracker .covid_tracker_content .covid_tracker_deaths:first-child {
+  color: purple;
+}
+
+.covid_tracker .covid_tracker_content .covid_tracker_vaccine h3 {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 14px;
+  color: purple;
+  margin-bottom: 10px;
+}
+
+.covid_tracker .covid_tracker_content .covid_tracker_vaccine small {
+  font-family: "Roboto";
+  font-size: 10px;
+  font-style: italic;
+  color: #666666;
+}
+
+.covid_tracker .covid_tracker_content .covid_tracker_vaccine .find_shot {
+  font-size: 14px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: purple;
+}
+
+.covid_tracker .covid_tracker_content .covid_tracker_vaccine .vaccine_toll {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.covid_tracker .covid_tracker_content .covid_tracker_vaccine .vaccine_toll .figure {
+  width: 10%;
+  font-size: 15px;
+  color: purple;
+}
+
+.covid_tracker .covid_tracker_content .covid_tracker_vaccine .vaccine_toll .toll_color_code {
+  width: 87%;
+  height: 17px;
+  background-color: #c2c2c2;
+  margin-left: 8px;
+  position: relative;
+}
+
+.covid_tracker .covid_tracker_content .covid_tracker_vaccine .vaccine_toll .toll_color_code .ovrly_cnt {
+  position: absolute;
+  height: inherit;
+  width: 50%;
+  background-color: purple;
+}
+/*# sourceMappingURL=CovidTracker.css.map */

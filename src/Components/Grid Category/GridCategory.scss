@@ -31,7 +31,7 @@
 
                 img {
                     width: 100%;
-                    height: 100%;
+                    height: inherit;
                     object-fit: cover;
                 }
             }
@@ -45,3 +45,48 @@
         }
     }
 }
+
+@media only screen and (max-width: 1316px) {  
+.gridcatg_container {
+    width: 94%;
+    margin: 0 auto;
+}
+
+}
+
+@media only screen and (max-width: 1000px) {  
+    .gridcatg_container {
+        display: none;
+    }
+    
+    }
+
+    @media only screen and (max-width: 1000px) {  
+        .gridcatg_container {
+            display: block;
+            .gridcatg_main {
+                display: block;
+
+                .item {
+                    width: 100%;
+                    min-height: 350px;
+                    // border: 1px solid black;
+
+                    border-bottom: 1px solid #000;
+                    margin-top: 18px;
+
+                    .media {
+                        height: 80% !important;
+
+                        overflow: hidden !important;
+                    }
+
+                    .title {
+                        font-size: 23px;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+        
+        }

@@ -18,3 +18,32 @@
         color: black;
     }
 }
+
+@media only screen and (max-width: 1500px) {
+    .hot_topics {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .hot_topics {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .hot_topics {
+        width: 80%;
+        margin-bottom: 10px;
+        font-size: 13px;
+        // background: rgb(75, 75, 75);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .hot_topics {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+}

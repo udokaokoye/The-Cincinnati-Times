@@ -1,0 +1,77 @@
+.covid_tracker {
+    .covid_tracker_bar {
+      font-family: "Roboto";
+      display: flex;
+      align-items: center;
+      h3 {
+        font-family: "Roboto";
+        font-weight: bold;
+        font-size: 17px;
+      }
+    }
+
+    .covid_tracker_content {
+      .covid_tracker_cases,
+      .covid_tracker_deaths {
+        font-family: "Roboto";
+        font-weight: 500;
+        &:first-child {
+          color: purple;
+        }
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 17px;
+      }
+
+      .covid_tracker_vaccine {
+        h3 {
+          font-family: "Roboto";
+          font-weight: bold;
+          font-size: 14px;
+          color: purple;
+          margin-bottom: 10px;
+        }
+
+        small {
+          font-family: "Roboto";
+          font-size: 10px;
+          font-style: italic;
+          color: #666666;
+        }
+
+        .find_shot {
+          font-size: 14px;
+          margin-top: 15px;
+          font-weight: bold;
+          color: purple;
+        }
+
+        .vaccine_toll {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          .figure {
+            width: 10%;
+            font-size: 15px;
+            color: purple;
+          }
+
+          .toll_color_code {
+            width: 87%;
+            height: 17px;
+            background-color: rgb(194, 194, 194);
+            margin-left: 8px;
+            position: relative;
+
+            .ovrly_cnt {
+              position: absolute;
+              height: inherit;
+              width: 50%;
+              background-color: purple;
+            }
+          }
+        }
+      }
+    }
+  }

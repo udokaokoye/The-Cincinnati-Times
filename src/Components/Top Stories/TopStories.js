@@ -68,10 +68,12 @@ const TopStories = () => {
                                 <h1>Larry Elder won’t seek rematch against Gov. Gavin Newsom in 2022 race</h1>
                                 <p>The Los Angeles native said that he has instead formed a political action committee to help Republicans running for the Senate and House.</p>
                             </div>
+                            <LineBreaker mode={"thin"} />
                             <div className="side_right_content">
                                 <h1>Larry Elder won’t seek rematch against Gov. Gavin Newsom in 2022 race</h1>
                                 <p>The Los Angeles native said that he has instead formed a political action committee to help Republicans running for the Senate and House.</p>
                             </div>
+                            <LineBreaker mode={"thin"} />
 
                             <div className="side_right_content">
                                 <h1>Larry Elder won’t seek rematch against Gov. Gavin Newsom in 2022 race</h1>

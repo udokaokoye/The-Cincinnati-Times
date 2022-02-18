@@ -1,0 +1,39 @@
+.sideNav_container {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+     
+    color: black;
+    font-family: 'Roboto';
+    border-top: 1px solid #cccc;
+    padding-top: 10px;
+
+
+    .search {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        button {
+            width: 30%;
+            margin-left: 10px;
+            background: #4583b3;
+            border: none;
+            font-size: 15px;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        input {
+            width: 70%;
+            height: 30px;
+            border: 1px solid #cccc;
+            color: rgb(78, 78, 78);
+            padding: 5px;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+    }
+}

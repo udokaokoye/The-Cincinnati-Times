@@ -1,0 +1,60 @@
+.adminNav_container {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #a3a3a3;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.adminNav_container .nv_top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 20px;
+}
+
+.adminNav_container .nv_top h1 {
+  font-family: 'Chomsky';
+  font-size: 39px;
+  font-weight: lighter;
+}
+
+.adminNav_container .nv_top .user_btn {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.adminNav_container .nv_links {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.adminNav_container .nv_links .admNav_link {
+  color: black;
+  text-decoration: none;
+  font-size: 19px;
+  text-transform: capitalize;
+  font-family: 'Balsamiq Sans';
+}
+/*# sourceMappingURL=AdminNav.css.map */

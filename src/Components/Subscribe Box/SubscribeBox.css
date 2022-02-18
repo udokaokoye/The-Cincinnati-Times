@@ -1,0 +1,50 @@
+.right_bar_subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.right_bar_subscribe h3 {
+  font-size: 17px;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+.right_bar_subscribe .subscribe_intro {
+  font-weight: bold;
+  text-align: center;
+}
+
+.right_bar_subscribe .right_bar_subscribe_input {
+  width: 90%;
+  height: 40px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 15px;
+  border-radius: 4px;
+  border: 1px solid #d6d6d6;
+  padding-left: 10px;
+}
+
+.right_bar_subscribe .right_bar_subscribe_input:focus {
+  outline: none;
+}
+
+.right_bar_subscribe .right_bar_subscribe_btn {
+  width: 50%;
+  height: 35px;
+  margin-top: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+  background-color: purple;
+  border-radius: 4px;
+  border: none;
+}
+/*# sourceMappingURL=SubscribeBox.css.map */

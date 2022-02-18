@@ -28,6 +28,7 @@
 }
 
 .links_nav .left .search_bars {
+  width: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,6 +39,7 @@
 
 .links_nav .left .search_bars .menu_bar {
   margin-left: 20px;
+  display: none;
 }
 
 .links_nav .left .link {
@@ -99,5 +101,35 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+}
+
+.links_nav .right .menu {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .links_nav {
+    height: 7vh;
+    display: none;
+  }
+  .links_nav .left {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .links_nav .left .link {
+    display: none;
+  }
+  .links_nav .left .with_flag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .links_nav .right .auth_nav_btn {
+    display: none;
+  }
+  .links_nav .right .menu {
+    display: block;
+  }
 }
 /*# sourceMappingURL=LinksNav.css.map */

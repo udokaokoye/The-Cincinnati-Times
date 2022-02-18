@@ -1,0 +1,42 @@
+.sideNav_container {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  font-family: 'Roboto';
+  border-top: 1px solid #cccc;
+  padding-top: 10px;
+}
+
+.sideNav_container .search {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sideNav_container .search button {
+  width: 30%;
+  margin-left: 10px;
+  background: #4583b3;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.sideNav_container .search input {
+  width: 70%;
+  height: 30px;
+  border: 1px solid #cccc;
+  color: #4e4e4e;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=SideNav.css.map */

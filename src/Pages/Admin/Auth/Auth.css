@@ -1,0 +1,71 @@
+.admin_auth_conttt {
+  width: 100%;
+  height: 100vh;
+  background-color: #c7c4c4;
+}
+
+.admin_auth_wrapperr {
+  width: 30%;
+  height: 70vh;
+  margin: 0 auto;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_auth_wrapperr h1 {
+  font-family: 'Roboto';
+  font-size: 46px;
+}
+
+.admin_auth_wrapperr .form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.admin_auth_wrapperr .form input {
+  display: block;
+  width: 80%;
+  height: 40px;
+  margin-bottom: 25px;
+  padding: 5px;
+  border: 1px solid #d4d3d3;
+}
+
+.admin_auth_wrapperr .form .login_btn {
+  width: 80%;
+  height: 60px;
+}
+
+.admin_auth_wrapperr .form .login_btn button {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Auth.css.map */

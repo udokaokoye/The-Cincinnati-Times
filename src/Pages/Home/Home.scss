@@ -4,6 +4,7 @@ $text-color: #033b7c;
 * {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -84,11 +85,14 @@ span {
               }
             }
           }
+          .showcase_main_content {
+            display: none;
+          }
 
           .showcase_main {
             width: 73%;
             height: 100%;
-            background-color: gold;
+            // background-color: gold;
             position: relative;
 
             .show_main_media {
@@ -158,6 +162,8 @@ span {
           }
         }
       }
+
+
     }
 
     .right_bar {
@@ -188,123 +194,6 @@ span {
         }
       }
 
-      .covid_tracker {
-        .covid_tracker_bar {
-          font-family: "Roboto";
-          display: flex;
-          align-items: center;
-          h3 {
-            font-family: "Roboto";
-            font-weight: bold;
-            font-size: 17px;
-          }
-        }
-
-        .covid_tracker_content {
-          .covid_tracker_cases,
-          .covid_tracker_deaths {
-            font-family: "Roboto";
-            font-weight: 500;
-            &:first-child {
-              color: purple;
-            }
-            width: 70%;
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 17px;
-          }
-
-          .covid_tracker_vaccine {
-            h3 {
-              font-family: "Roboto";
-              font-weight: bold;
-              font-size: 14px;
-              color: purple;
-              margin-bottom: 10px;
-            }
-
-            small {
-              font-family: "Roboto";
-              font-size: 10px;
-              font-style: italic;
-              color: #666666;
-            }
-
-            .find_shot {
-              font-size: 14px;
-              margin-top: 15px;
-              font-weight: bold;
-              color: purple;
-            }
-
-            .vaccine_toll {
-              width: 100%;
-              display: flex;
-              align-items: center;
-              .figure {
-                width: 10%;
-                font-size: 15px;
-                color: purple;
-              }
-
-              .toll_color_code {
-                width: 87%;
-                height: 17px;
-                background-color: rgb(194, 194, 194);
-                margin-left: 8px;
-                position: relative;
-
-                .ovrly_cnt {
-                  position: absolute;
-                  height: inherit;
-                  width: 50%;
-                  background-color: purple;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .right_bar_subscribe {
-        display: flex;
-        flex-direction: column;
-        h3 {
-          font-size: 17px;
-          font-family: "Roboto";
-          font-weight: bold;
-        }
-
-        .subscribe_intro {
-          font-weight: bold;
-          text-align: center;
-        }
-
-        .right_bar_subscribe_input {
-          width: 100%;
-          height: 40px;
-          align-self: center;
-          margin-top: 15px;
-          border-radius: 4px;
-          border: 1px solid #d6d6d6;
-          padding-left: 10px;
-          &:focus {
-            outline: none;
-          }
-        }
-
-        .right_bar_subscribe_btn {
-          width: 50%;
-          height: 35px;
-          margin-top: 10px;
-          align-self: center;
-          color: white;
-          background-color: purple;
-          border-radius: 4px;
-          border: none;
-        }
-      }
-
       .right_bar_weather {
         .weather_br_location {
           display: flex;
@@ -317,43 +206,6 @@ span {
           span {
             font-weight: bold;
           }
-        }
-      }
-
-      .right_vaccine_finder {
-        h3 {
-          font-family: "Roboto";
-          font-weight: bold;
-          font-size: 17px;
-        }
-
-        p {
-          text-align: center;
-          font-weight: bold;
-          margin-bottom: 10px;
-        }
-
-        .zipcode_field {
-          width: 100%;
-          height: 40px;
-          align-self: center;
-          margin-top: 15px;
-          border-radius: 4px;
-          border: 1px solid #d6d6d6;
-          padding-left: 10px;
-          &:focus {
-            outline: none;
-          }
-        }
-        button {
-          width: 50%;
-          height: 35px;
-          margin-top: 10px;
-          align-self: center;
-          color: white;
-          background-color: purple;
-          border-radius: 4px;
-          border: none;
         }
       }
 
@@ -382,4 +234,213 @@ span {
       }
     }
   }
+
+  .mobile_covid_container {
+    display: none;
+  }
+
+  .categories {
+    .mobile_weather_container {
+      display: none;
+    }
+
+    .mobile_vaccine_container {
+      display: none;
+    }
+  }
 }
+
+
+@media only screen and (max-width: 1316px) {
+ .container {
+   .container-wrapper {
+     width: 94%;
+   }
+ }
+}
+
+@media only screen and (max-width: 1220px) {
+  .container {
+    .container-wrapper {
+      width: 94%;
+
+      .main_content {
+        .showcase {
+          .showcase_top {
+            .showcase_content {
+              .showcase_content_child {
+                display: none;
+              }
+            }
+          }
+
+          .showcase_bottom {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+ }
+
+ @media only screen and (max-width: 1100px) {
+  .container {
+    .container-wrapper {
+      .main_content {
+        width: 100%;
+        .showcase {
+          margin-bottom: 30px;
+          .showcase_top {
+            .showcase_content {
+              .showcase_content_child {
+                display: block;
+                // margin-top: ;
+              }
+            }
+          }
+
+          .showcase_bottom {
+            display: none;
+          }
+        }
+      }
+
+      .right_bar {
+        display: none;
+      }
+    }
+  }
+ }
+
+ @media only screen and (max-width: 800px) {
+  .container {
+    .container-wrapper {
+      .main_content {
+        .showcase {
+          margin-bottom: 30px;
+          .showcase_top {
+            flex-direction: column;
+
+            .showcase_main_content {
+              display: block;
+              h1 {
+                margin-bottom: 15px;
+                font-family: 'Roboto';
+                font-weight: bolder;
+              }
+
+              p {
+                margin-bottom: 25px;
+              }
+            }
+            .showcase_main {
+              width: 100%;
+              .gradient {
+                display: none;
+              }
+            }
+            .showcase_content {
+              display: none;
+              .showcase_content_child {
+                display: block;
+                // margin-top: ;
+              }
+            }
+          }
+
+          .showcase_bottom {
+            display: flex;
+          }
+        }
+      }
+
+      .right_bar {
+        display: none;
+      }
+    }
+  }
+ }
+
+ @media only screen and (max-width: 600px) {
+  .container {
+    .container-wrapper {
+      .main_content {
+        .showcase {
+          .showcase_bottom {
+            display: flex;
+            flex-direction: column;
+
+            .btm_news_1 {
+              border-bottom: #d6d6d6 1px solid;
+              p {
+                font-size: 20px;
+              }
+            }
+
+          .btm_news_2,
+          .btm_news_3 {
+            p {
+              font-size: 20px;
+            }
+            border: none;
+            border-left: none !important;
+
+            &:first-child,
+            &:nth-child(2) {
+              border-bottom: #d6d6d6 1px solid;
+              padding-left: 10px;
+            }
+          }
+          }
+        }
+      }
+
+      .right_bar {
+        display: none;
+      }
+    }
+  }
+ }
+
+ @media only screen and (max-width: 400px) {
+  .container {
+    .mobile_covid_container {
+      display: block;
+      margin-top: 20px;
+      // background: red !important;
+
+      .mobile_covid_wrapper {
+        width: 90%;
+        margin: 0 auto;
+        // background: blue;
+
+        .bar_intro {
+          color: purple;
+          font-family: 'Roboto';
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+      
+    }
+    .categories {
+      .mobile_weather_container, .mobile_vaccine_container {
+        display: block;
+        margin-top: 20px;
+
+        .mobile_weather_wrapper, .mobile_vaccine_wrapper {
+          width: 90%;
+          margin: 0 auto;
+
+          .bar_intro {
+            color: purple;
+            font-family: 'Roboto';
+            font-weight: bold;
+            font-size: 20px;
+          }
+        }
+        
+      }
+    }
+  }
+ }

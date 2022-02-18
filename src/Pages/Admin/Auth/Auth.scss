@@ -1,0 +1,56 @@
+.admin_auth_conttt {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(199, 196, 196);
+}
+
+.admin_auth_wrapperr {
+    width: 30%;
+    height: 70vh;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-family: 'Roboto';
+        font-size: 46px;
+    }
+    p {
+        // font: ;
+    }
+
+    .form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        input {
+            display: block;
+            width: 80%;
+            height: 40px;
+            margin-bottom: 25px;
+            padding: 5px;
+            border: 1px solid rgb(212, 211, 211);
+        }
+
+        .login_btn {
+            button {
+                width: 100%;
+                height: 100%;
+                background: #000;
+                color: white;
+                border: none;
+                font-weight: bold;
+                font-size: 18px;
+                cursor: pointer;
+            }
+            width: 80%;
+            height: 60px;
+        }
+    }
+    
+}

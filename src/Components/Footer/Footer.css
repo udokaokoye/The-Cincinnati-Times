@@ -156,4 +156,10 @@
 .footer_container .footer_wrapper .copyrights_credits p:last-child {
   font-style: italic;
 }
+
+@media only screen and (max-width: 1445px) {
+  .footer_container {
+    display: none;
+  }
+}
 /*# sourceMappingURL=Footer.css.map */

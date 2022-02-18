@@ -19,11 +19,13 @@
         align-items: center;
         color: white;
         .search_bars {
+            width: 45px;
             display: flex;
             justify-content: space-between;
 
             .menu_bar {
                 margin-left: 20px;
+                display: none;
             }
         }
 
@@ -70,5 +72,47 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+
+        .menu {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .links_nav {
+        height: 7vh;
+        display: none;
+
+        .left {
+            // background: red;
+            justify-content: flex-start;
+            .link {
+                display: none;
+            }
+            
+
+            .with_flag {
+                display: flex;
+                // margin-left: 20px;
+                // background: #000;
+
+                // .flag_container {
+                //     // width: 60px !important;
+                //     background: green;
+                // }
+            }
+        }
+        
+        .right {
+            // background: blue;
+            .auth_nav_btn {
+                display: none;
+            }
+
+            .menu {
+                display: block;
+            }
+        }
     }
 }
