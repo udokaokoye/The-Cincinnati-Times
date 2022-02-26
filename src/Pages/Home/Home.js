@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LineBreaker from '../../Components/Line Breaker/LineBreaker'
@@ -13,10 +13,24 @@ import HomeNewsCategory from '../../Components/News Category/HomeNewsCategory';
 import CovidTracker from '../../Components/Covid Tracker/CovidTracker';
 import VaccineFinder from '../../Components/Vaccine Finder/VaccineFinder';
 import SubscribeBox from '../../Components/Subscribe Box/SubscribeBox';
+import { useCookies } from "react-cookie";
 const Home = () => {
     const dummy = [1,2,3,4,5,6,7,8,9,0]
+
+    // const IsLoggedIn = () => {
+    //     if (cookies.user) {
+    //         return 1;
+    //       } else {
+    //           return 0;
+    //       }
+    // }
+
+    useEffect(() => {
+        
+    }, [])
+    
     return (
-        <div className='container'>
+        <div  className='container' id='container'>
             <div className="container-wrapper">
                 <div className="main_content">
                     {/* !!SHOWCASE */}

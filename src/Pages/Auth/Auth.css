@@ -46,17 +46,25 @@
   font-weight: bold;
 }
 
-.auth_container .auth_wrapper input {
+.auth_container .auth_wrapper input[type='email'], .auth_container .auth_wrapper input[type='password'], .auth_container .auth_wrapper input[type='text'] {
   display: block;
-  width: 100%;
+  width: 94%;
   height: 40px;
   border: 1px solid #d1d1d1;
   margin-top: 5px;
   margin-bottom: 15px;
+  padding-left: 20px;
 }
 
-.auth_container .auth_wrapper input:focus {
+.auth_container .auth_wrapper input[type='email']:focus, .auth_container .auth_wrapper input[type='password']:focus, .auth_container .auth_wrapper input[type='text']:focus {
   outline: none;
+}
+
+.auth_container .auth_wrapper .email_allow {
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-size: 13px;
+  display: none;
 }
 
 .auth_container .auth_wrapper button {

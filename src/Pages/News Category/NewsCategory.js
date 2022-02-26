@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./NewsCategory.css";
 import { useParams, useHistory, Link } from "react-router-dom";
 import LineBreaker from "../../Components/Line Breaker/LineBreaker";
@@ -8,15 +8,26 @@ import TopStories from "../../Components/Top Stories/TopStories";
 import NewsCategorySection from "../../Components/News Category Section/NewsCategorySection";
 import GridCategory from "../../Components/Grid Category/GridCategory";
 import NewsCategoryList from "../../Components/News Category List/NewsCategoryList";
+import PopupAlert from "../../Components/Popup Alert/PopupAlert";
 const NewsCategory = () => {
+  const [popupAlertm, setpopupAlertm] = useState(true)
   const { category } = useParams();
   return (
     <div className="news_category_container">
+
+      {popupAlertm ? (<PopupAlert stateController={setpopupAlertm} />) : '' }
+      <h1 className="Category_Name">{category}</h1>
       <div className="news_category_wrapper">
         <div className="m_content">
           <div className="category_showcase">
             <div className="showcase_top">
+
+              
               <div className="showcase_main">
+                <div className="mobile_showcase_info">
+                  <h1>As Covid cases explode in California, next few weeks are
+                      ‘absolutely critical’</h1>
+                </div>
                 <img
                   className="show_main_media"
                   src={require("../../Assets/Demo/bidenchristmas.jpg")}

@@ -39,17 +39,25 @@
             font-weight: bold;
         }
 
-        input {
+        input[type='email'], input[type='password'], input[type='text'] {
             display: block;
-            width: 100%;
+            width: 94%;
             height: 40px;
             border: 1px solid rgb(209, 209, 209);
             margin-top: 5px;
             margin-bottom: 15px;
+            padding-left: 20px;
 
             &:focus {
                 outline: none;
             }
+        }
+
+        .email_allow {
+            margin-bottom: 20px;
+            font-family: 'Roboto';
+            font-size: 13px;
+            display: none;
         }
 
         button {

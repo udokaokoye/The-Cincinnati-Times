@@ -4,7 +4,7 @@ $text-color: #033b7c;
 * {
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
+  // box-sizing: border-box !important;
 }
 
 h1 {
@@ -19,6 +19,41 @@ span {
 .router_link {
   text-decoration: none;
   color: initial;
+  border: none;
+  outline: none;
+  background-color: transparent !important;
+  background: none;
+  -webkit-tap-highlight-color: none !important;
+
+  &:hover {
+    text-decoration: none;
+  color: initial;
+  border: none;
+  outline: none;
+  background-color: transparent !important;
+  background: none;
+  -webkit-tap-highlight-color: none !important;
+  }
+
+  &:visited {
+    text-decoration: none;
+  color: initial;
+  border: none;
+  outline: none;
+  background-color: transparent !important;
+  background: none;
+  -webkit-tap-highlight-color: none !important;
+  }
+
+  &:focus {
+    text-decoration: none;
+  color: initial;
+  border: none;
+  outline: none;
+  background-color: transparent !important;
+  background: none;
+  -webkit-tap-highlight-color: none !important;
+  }
 }
 
 .container {
@@ -28,6 +63,7 @@ span {
   // background-color: blue;
   // border: 1px solid red;
   margin-top: 10px;
+  overflow-x: hidden;
 
   .container-wrapper {
     width: 100%;

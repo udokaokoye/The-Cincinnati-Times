@@ -9,15 +9,18 @@ import {
   faComment,
   faComments,
   faEnvelope,
+  faFlag,
   faShare,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, {useState} from "react";
 import GridCategory from "../../Components/Grid Category/GridCategory";
 import LineBreaker from "../../Components/Line Breaker/LineBreaker";
 import NewsCategorySection from "../../Components/News Category Section/NewsCategorySection";
 import "./NewsPage.css";
 const NewsPage = () => {
+  const [showComments, setshowComments] = useState(false)
+  const demoComments = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
     <div className="newsPage_container">
       <div className="newsPage_wrapper">
@@ -52,7 +55,7 @@ const NewsPage = () => {
         </div>
         <LineBreaker />
 
-        <div className="media_1">
+        <div className=" media media_1">
           <img
             src={require("../../Assets/Demo/33bb0c83-Vincent-Jackson.jpg")}
             alt=""
@@ -91,8 +94,20 @@ const NewsPage = () => {
           accusations of genocide and efforts in the Russian Parliament to
           recognize breakaway governments in Ukraine lent credence to the
           intelligence. <br />
-          <br /> If carried out, the Russian operation would be an expansion of
-          a propaganda theme that American intelligence officials and outside
+          <br />
+          <div className=" media media_2">
+            <img
+              src={require("../../Assets/Demo/3149099998b6432b9c09fb9a8ea648d2.jpg")}
+              alt=""
+            />
+            <small className="media_description">
+              Sora Bundle in Kuala Lumpur, Malaysia, is one of many secondhand
+              stores in the country.Credit...Ian Teh for The New York Times
+            </small>
+          </div>
+          <br />
+          If carried out, the Russian operation would be an expansion of a
+          propaganda theme that American intelligence officials and outside
           experts have said Moscow has been pushing on social media, on
           conspiracy sites and with state-controlled media since November. The
           video was intended to be elaborate, officials said, with plans for
@@ -109,32 +124,40 @@ const NewsPage = () => {
           this propaganda video is one of a number of options that the Russian
           government is developing as a fake pretext to initiate and potentially
           justify military aggression against Ukraine,” Mr. Price said. <br />
-          <br /> A British official said its government had done its own
-          analysis of the intelligence and had high confidence that Russia was
-          planning to engineer a pretext to blame Ukraine for an attack. Another
-          British official, Liz Truss, the foreign secretary, said the
-          intelligence was “clear and shocking evidence of Russia’s unprovoked
-          aggression and underhand activity to destabilize Ukraine.” “The U.K.
-          and our allies will continue to expose Russian subterfuge and
-          propaganda and call it out for what it is,” Ms. Truss said in a
-          statement. The Kremlin’s spokesman, Dmitri S. Peskov, dismissed the
-          American allegations in comments carried by Russian news agencies.
-          “This isn’t the first report of its kind,” he said. “Similar things
-          have been claimed before. But nothing ever came of them.” While it is
-          not clear that senior Russian officials approved the operation, it was
-          far along in the planning and the United States had high confidence
-          that it was under serious consideration, officials said. Russian
-          officials had found corpses to use in the video, discussed actors to
-          play mourners and plotted how to make military equipment appear
-          Ukrainian or NATO-supplied. While the plan sounded far-fetched,
-          American officials said they believed it could have worked to provide
-          a spark for a Russian military operation — an outcome they said they
-          hoped would be made less likely by exposing the effort publicly. The
-          highlights of the intelligence have been declassified, in hopes of
-          both derailing the plot and convincing allies of the seriousness of
-          the Russian planning. The officials interviewed for this article
-          requested anonymity to discuss declassified but sensitive intelligence
-          before it was released publicly. <br />
+          <br />
+          <div className=" media media_3">
+            <img src={require("../../Assets/Demo/download (12).png")} alt="" />
+            <small className="media_description">
+              Sora Bundle in Kuala Lumpur, Malaysia, is one of many secondhand
+              stores in the country.Credit...Ian Teh for The New York Times
+            </small>
+          </div>
+          br A British official said its government had done its own analysis of
+          the intelligence and had high confidence that Russia was planning to
+          engineer a pretext to blame Ukraine for an attack. Another British
+          official, Liz Truss, the foreign secretary, said the intelligence was
+          “clear and shocking evidence of Russia’s unprovoked aggression and
+          underhand activity to destabilize Ukraine.” “The U.K. and our allies
+          will continue to expose Russian subterfuge and propaganda and call it
+          out for what it is,” Ms. Truss said in a statement. The Kremlin’s
+          spokesman, Dmitri S. Peskov, dismissed the American allegations in
+          comments carried by Russian news agencies. “This isn’t the first
+          report of its kind,” he said. “Similar things have been claimed
+          before. But nothing ever came of them.” While it is not clear that
+          senior Russian officials approved the operation, it was far along in
+          the planning and the United States had high confidence that it was
+          under serious consideration, officials said. Russian officials had
+          found corpses to use in the video, discussed actors to play mourners
+          and plotted how to make military equipment appear Ukrainian or
+          NATO-supplied. While the plan sounded far-fetched, American officials
+          said they believed it could have worked to provide a spark for a
+          Russian military operation — an outcome they said they hoped would be
+          made less likely by exposing the effort publicly. The highlights of
+          the intelligence have been declassified, in hopes of both derailing
+          the plot and convincing allies of the seriousness of the Russian
+          planning. The officials interviewed for this article requested
+          anonymity to discuss declassified but sensitive intelligence before it
+          was released publicly. <br />
           <br /> Avril D. Haines, the director of national intelligence, and
           other top administration officials briefed members of Congress on the
           material on Thursday. Details of the information have also been shared
@@ -164,7 +187,7 @@ const NewsPage = () => {
 
         <div className="comments_socials">
           <div className="btn">
-            <button>Read 225 Comments</button>
+            <button onClick={() => setshowComments(!showComments)}>Read 225 Comments</button>
           </div>
           <div className="btm_socialmedia">
             <div className="icn">
@@ -187,12 +210,75 @@ const NewsPage = () => {
             </div>
           </div>
         </div>
+
+        <div style={{display: showComments ? 'block' : 'none'}} className="news_comments">
+          <p className="comments_intro">
+            Read Comments <span>225</span>
+          </p>
+
+          <div className="comment_bar">
+            <div className="comment_bar_wrapper">
+              <span>All</span>
+              <span>Cincy Times Replies</span>
+              <span>Readers Picks</span>
+            </div>
+
+            <div className="sort_input">
+              <span>
+                Sort By:{" "}
+                <select>
+                  {" "}
+                  <option value="Newest"> Newest</option>{" "}
+                  <option value="Oldest"> Oldest</option>
+                </select>
+              </span>
+            </div>
+          </div>
+
+          <div className="comment_content_wrapper">
+            {demoComments.map((comment) => (
+              <React.Fragment>
+              <div key={comment} className="comment_content">
+                <div className="profile_img">S</div>
+                <div className="commnent_details">
+                  <h3 className="user_name">Steve C.</h3>
+                  <div className="location_date">
+                    <span>Cincinnati | </span> <span> Oct 21 2021</span>
+                  </div>
+
+                  <div className="comment_txt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus praesentium aliquam, perspiciatis sequi commodi
+                    officia nihil possimus eligendi recusandae cumque inventore
+                    odio, expedita accusantium obcaecati. Velit voluptas
+                    similique asperiores eos?
+                  </div>
+
+                  <div className="comment_footer">
+                    <div className="rec_share">
+                      {" "}
+                      <span>4 Recommended</span> | <span>Share</span>
+                    </div>
+                    <div className="flag" title="Flag Comment">
+                      <span>
+                        <FontAwesomeIcon icon={faFlag} />{" "}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <LineBreaker />
+              </React.Fragment>
+            ))}
+          </div>
+        </div>
       </div>
 
       <GridCategory />
-            <br />
-            <LineBreaker mode={'thick'} />
-            <br />
+      <br />
+      <LineBreaker mode={"thick"} />
+      <br />
       <NewsCategorySection />
     </div>
   );

@@ -1,0 +1,60 @@
+.allpost_container {
+
+    .allpost_wrapper {
+        width: 50%;
+        margin: 0 auto;
+        h1 {
+        font-family: 'Roboto';
+        }
+
+        .allpost_search {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                width: 300px;
+                padding: 5px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .allPosts {
+            width: 100%;
+            margin-top: 20px;
+
+            .post {
+                width: 50%;
+                margin: 0 auto;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                padding: 10px;
+
+                .media {
+                    width: 100%;
+                    height: 300px;
+                    background: yellow;
+                }
+
+                .title {
+                    margin-top: 25px;
+                    font-family: 'Roboto';
+                    font-size: 19px;
+                }
+
+                .ft {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 25px;
+                    p {
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}

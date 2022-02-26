@@ -7,6 +7,14 @@ $text-color: #033b7c;
   margin: 0 auto;
   height: auto;
   margin-top: 40px;
+
+  .Category_Name {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    text-transform: capitalize;
+  }
   .news_category_wrapper {
     width: 100%;
     height: auto;
@@ -18,6 +26,7 @@ $text-color: #033b7c;
   .m_content {
     width: 72.2%;
     height: auto;
+
     .category_showcase {
       width: 100%;
       height: auto;
@@ -29,10 +38,15 @@ $text-color: #033b7c;
         display: flex;
         justify-content: space-between;
 
+        
+
         .showcase_main {
+          .mobile_showcase_info {
+            display: none;
+          }
           width: 100%;
           height: 100%;
-          background-color: gold;
+          // background-color: gold;
           position: relative;
 
           .show_main_media {
@@ -131,174 +145,6 @@ $text-color: #033b7c;
       }
     }
 
-    .covid_tracker {
-      .covid_tracker_bar {
-        font-family: "Roboto";
-        display: flex;
-        align-items: center;
-        h3 {
-          font-family: "Roboto";
-          font-weight: bold;
-          font-size: 17px;
-        }
-      }
-
-      .covid_tracker_content {
-        .covid_tracker_cases,
-        .covid_tracker_deaths {
-          font-family: "Roboto";
-          font-weight: 500;
-          &:first-child {
-            color: purple;
-          }
-          width: 70%;
-          display: flex;
-          justify-content: space-between;
-          margin-bottom: 17px;
-        }
-
-        .covid_tracker_vaccine {
-          h3 {
-            font-family: "Roboto";
-            font-weight: bold;
-            font-size: 14px;
-            color: purple;
-            margin-bottom: 10px;
-          }
-
-          small {
-            font-family: "Roboto";
-            font-size: 10px;
-            font-style: italic;
-            color: #666666;
-          }
-
-          .find_shot {
-            font-size: 14px;
-            margin-top: 15px;
-            font-weight: bold;
-            color: purple;
-          }
-
-          .vaccine_toll {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            .figure {
-              width: 10%;
-              font-size: 15px;
-              color: purple;
-            }
-
-            .toll_color_code {
-              width: 87%;
-              height: 17px;
-              background-color: rgb(194, 194, 194);
-              margin-left: 8px;
-              position: relative;
-
-              .ovrly_cnt {
-                position: absolute;
-                height: inherit;
-                width: 50%;
-                background-color: purple;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .right_bar_subscribe {
-      display: flex;
-      flex-direction: column;
-      h3 {
-        font-size: 17px;
-        font-family: "Roboto";
-        font-weight: bold;
-      }
-
-      .subscribe_intro {
-        font-weight: bold;
-        text-align: center;
-      }
-
-      .right_bar_subscribe_input {
-        width: 100%;
-        height: 40px;
-        align-self: center;
-        margin-top: 15px;
-        border-radius: 4px;
-        border: 1px solid #d6d6d6;
-        padding-left: 10px;
-        &:focus {
-          outline: none;
-        }
-      }
-
-      .right_bar_subscribe_btn {
-        width: 50%;
-        height: 35px;
-        margin-top: 10px;
-        align-self: center;
-        color: white;
-        background-color: purple;
-        border-radius: 4px;
-        border: none;
-      }
-    }
-
-    .right_bar_weather {
-      .weather_br_location {
-        display: flex;
-        justify-content: space-between;
-        h3 {
-          font-family: "Roboto";
-          font-size: 17px;
-        }
-
-        span {
-          font-weight: bold;
-        }
-      }
-    }
-
-    .right_vaccine_finder {
-      h3 {
-        font-family: "Roboto";
-        font-weight: bold;
-        font-size: 17px;
-      }
-
-      p {
-        text-align: center;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-
-      .zipcode_field {
-        width: 100%;
-        height: 40px;
-        align-self: center;
-        margin-top: 15px;
-        border-radius: 4px;
-        border: 1px solid #d6d6d6;
-        padding-left: 10px;
-        &:focus {
-          outline: none;
-        }
-      }
-      button {
-        width: 50%;
-        height: 35px;
-        margin-top: 10px;
-        align-self: center;
-        color: white;
-        background-color: purple;
-        border-radius: 4px;
-        border: none;
-      }
-    }
 
     .right_ads_cnt {
       width: 100%;
@@ -325,3 +171,96 @@ $text-color: #033b7c;
     }
   }
 }
+
+@media only screen and (max-width: 1000px) {
+
+  .news_category_container {
+      // max-width: 0;
+      width: 100%;
+
+      .Category_Name {
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        font-size: 60px;
+        // font-family: 'Roboto';
+        text-transform: capitalize;
+      }
+      // background: blue;
+      .news_category_wrapper {
+          // background: red;
+          margin: 0 auto;
+          max-width: 95%;
+
+          .m_content {
+            width: 100%;
+
+            .category_showcase {
+                .showcase_top {
+
+                  .showcase_main {
+                    
+                  .mobile_showcase_info {
+                    display: block;
+                    font-family: 'PT Serif';
+                    font-style: italic;
+                    margin-bottom: 20px;
+                  }
+                    .gradient {
+                      display: none;
+                    }
+                  }
+                }
+            }
+
+          }
+      }
+
+      .right_bar {
+        display: none;
+      }
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+  .news_category_container {
+    .Category_Name {
+      font-size: 50px;
+    }
+      .news_category_wrapper {
+          .m_content {
+            .category_showcase {
+                .showcase_bottom {
+                  display: block;
+
+                  .btm_news_1,
+        .btm_news_2,
+        .btm_news_3 {
+            padding: 0;
+            border-left: none !important;
+
+            p {
+              font-family: 'Roboto';
+              font-weight: bold;
+            }
+
+            &:first-child,
+          &:nth-child(2) {
+            border-bottom: #d6d6d6 1px solid;
+          }
+        }
+                }
+            }
+
+          }
+      }
+
+      .right_bar {
+        display: none;
+      }
+  }
+
+}
+

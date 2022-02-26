@@ -2,11 +2,19 @@
     width: 100%;
     height: 100%;
     background-color: white;
+    // overflow-y: scroll;
      
     color: black;
     font-family: 'Roboto';
     border-top: 1px solid #cccc;
     padding-top: 10px;
+    // padding-bottom: 20px !important;
+
+    .side_intro {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
 
 
     .search {
@@ -33,6 +41,80 @@
             color: rgb(78, 78, 78);
             padding: 5px;
             font-size: 15px;
+            border-radius: 5px;
+        }
+    }
+
+    .side_bar_news_list {
+        width: 90%;
+        margin: 0 auto;
+        // background: red;
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 20px;
+
+        .left {
+            width: 50%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+
+            .side_links {
+                margin-bottom: 20px;
+                color: #302f2f;
+                text-decoration: none;
+                font-family: 'Franklin';
+                font-weight: bold;
+                font-size: 17px;
+            }
+        }
+
+        .right {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            .side_links {
+                font-family: 'Roboto' !important;
+                margin-bottom: 20px;
+                color: #4583b3;
+                text-decoration: none;
+                font-family: 'Franklin';
+                font-weight: bolder;
+                font-size: 17px;
+            }
+        }
+    }
+
+    .side_subscribe {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            text-align: center;
+            font-weight: bolder;
+            color: #4583b3;
+
+        }
+
+        input {
+            width: 70%;
+            height: 30px;
+            border: 1px solid #cccc;
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        .side_sub_btn {
+            width: 72%;
+            margin-top: 15px;
+            height: 50px;
+            background: #4583b3;
+            color: white;
+            border: none;
             border-radius: 5px;
         }
     }

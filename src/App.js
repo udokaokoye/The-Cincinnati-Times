@@ -13,6 +13,9 @@ import Auth from './Pages/Auth/Auth';
 import AdminAuth from './Pages/Admin/Auth/Auth';
 import AdminHome from './Pages/Admin/Admin Home/AdminHome';
 import AdminNav from './Pages/Admin/Admin Nav/AdminNav';
+import AddPost from './Pages/Admin/Add Post/AddPost';
+import AdminNewsCategory from './Pages/Admin/News Category/AdminNewsCategory';
+import AllPost from './Pages/Admin/All Post/AllPost'
 
 function App() {
   return (
@@ -48,6 +51,21 @@ function App() {
         <Route key={'/admin/home'} exact path={'/admin/home'}>
           <AdminNav />
           <AdminHome  />
+        </Route>
+
+        <Route key={'/admin/addPost'} exact path={'/admin/addPost'}>
+          <AdminNav />
+          <AddPost  />
+        </Route>
+
+        <Route key={'/admin/newsCategories'} exact path={'/admin/newsCategories'}>
+          <AdminNav />
+          <AdminNewsCategory />
+        </Route>
+
+        <Route key={'/admin/allposts'} exact path={'/admin/allposts'}>
+          <AdminNav />
+          <AllPost />
         </Route>
 
         

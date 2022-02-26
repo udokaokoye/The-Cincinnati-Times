@@ -6,6 +6,7 @@
     .catg_list_bar {
         width: 100%;
         display: flex;
+        align-items: center;
 
         .latest, .search {
             width: fit-content;
@@ -13,7 +14,7 @@
             // background: red;
             padding: 5px;
             cursor: pointer;
-            color: rgb(145, 143, 143);
+            color: #918f8f;
         }
 
         .latest {
@@ -24,6 +25,27 @@
 
         .search {
             margin-left: 20px;
+            // background: red;
+            display: flex;
+            align-items: center;
+
+            h4 {
+                margin-left: 5px;
+            }
+
+            input {
+                height: 100%;
+                width: 200px;
+                background: transparent;
+                color: black;
+                border: 1px solid rgb(175, 175, 175);
+                padding: 5px;
+                border-radius: 5px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
         }
     }
 
@@ -38,6 +60,7 @@
             .media {
                 width: 30%;
                 height: 150px;
+                overflow: hidden;
                 // background: red;
 
                 img {
@@ -81,4 +104,44 @@
             }
         }
     }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .categoryList_container {
+        .catg_list_wrapper {
+            .list_content {
+                flex-direction: column-reverse;
+                padding-top: 20px;
+                .media {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 20px;
+                    img {
+                        object-fit: cover;
+                    }
+                }
+
+                .content {
+                    width: 100%;
+
+                    h3 {
+                        font-weight: bold;
+                    }
+
+                    p {
+                        font-family: 'Roboto';
+                        font-weight: 400;
+                    }
+                }
+
+                .date {
+                    width: 100%;
+                    margin-top: 20px;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+
 }

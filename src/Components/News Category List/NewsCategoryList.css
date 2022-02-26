@@ -9,6 +9,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .categoryList_container .catg_list_bar .latest, .categoryList_container .catg_list_bar .search {
@@ -29,6 +32,30 @@
 
 .categoryList_container .catg_list_bar .search {
   margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.categoryList_container .catg_list_bar .search h4 {
+  margin-left: 5px;
+}
+
+.categoryList_container .catg_list_bar .search input {
+  height: 100%;
+  width: 200px;
+  background: transparent;
+  color: black;
+  border: 1px solid #afafaf;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.categoryList_container .catg_list_bar .search input:focus {
+  outline: none;
 }
 
 .categoryList_container .catg_list_wrapper {
@@ -46,6 +73,7 @@
 .categoryList_container .catg_list_wrapper .list_content .media {
   width: 30%;
   height: 150px;
+  overflow: hidden;
 }
 
 .categoryList_container .catg_list_wrapper .list_content .media img {
@@ -87,5 +115,39 @@
   width: 20%;
   color: #888787;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .categoryList_container .catg_list_wrapper .list_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-top: 20px;
+  }
+  .categoryList_container .catg_list_wrapper .list_content .media {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .categoryList_container .catg_list_wrapper .list_content .media img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .categoryList_container .catg_list_wrapper .list_content .content {
+    width: 100%;
+  }
+  .categoryList_container .catg_list_wrapper .list_content .content h3 {
+    font-weight: bold;
+  }
+  .categoryList_container .catg_list_wrapper .list_content .content p {
+    font-family: 'Roboto';
+    font-weight: 400;
+  }
+  .categoryList_container .catg_list_wrapper .list_content .date {
+    width: 100%;
+    margin-top: 20px;
+    font-style: italic;
+  }
 }
 /*# sourceMappingURL=NewsCategoryList.css.map */

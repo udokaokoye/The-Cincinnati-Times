@@ -1,0 +1,128 @@
+.add_post_container {
+  width: 100%;
+  height: 100%;
+}
+
+.add_post_container .add_post_wrapper {
+  margin: 0 auto;
+  width: 70%;
+  margin-bottom: 50px;
+}
+
+.add_post_container .add_post_wrapper .add_post_intro {
+  font-family: 'Roboto';
+  margin-bottom: 40px;
+}
+
+.add_post_container .add_post_wrapper .form {
+  font-family: 'Roboto';
+}
+
+.add_post_container .add_post_wrapper .form input, .add_post_container .add_post_wrapper .form textarea, .add_post_container .add_post_wrapper .form select {
+  display: block;
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+}
+
+.add_post_container .add_post_wrapper .form input:focus, .add_post_container .add_post_wrapper .form textarea:focus, .add_post_container .add_post_wrapper .form select:focus {
+  outline: none;
+}
+
+.add_post_container .add_post_wrapper .form input[type="text"], .add_post_container .add_post_wrapper .form textarea {
+  width: 50%;
+  min-height: 80px;
+  border-radius: 8px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.add_post_container .add_post_wrapper .form .content_input {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.add_post_container .add_post_wrapper .form select {
+  width: 30%;
+  min-height: 40px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.add_post_container .add_post_wrapper .form .field_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.add_post_container .add_post_wrapper .form .field_group .file_inpt input[type="text"] {
+  min-height: 40px !important;
+}
+
+.add_post_container .add_post_wrapper .form .field_group .file_inpt span {
+  font-weight: bold;
+}
+
+.add_post_container .add_post_wrapper .form input[type="checkbox"] {
+  display: inline;
+  margin-top: 20px;
+}
+
+.add_post_container .add_post_wrapper .form .add_posts_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.add_post_container .add_post_wrapper .form .add_posts_btn button {
+  margin-left: 20px;
+  width: 200px;
+  min-height: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.add_post_container .add_post_wrapper .form .add_posts_btn button:first-child {
+  margin-left: 0;
+}
+
+.add_post_container .add_post_wrapper .form .add_posts_btn .publish_btn {
+  background: green;
+  color: white;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.add_post_container .add_post_wrapper .form .add_posts_btn .publish_btn:hover {
+  background: #025f02;
+}
+
+.add_post_container .add_post_wrapper .form .add_posts_btn .save_btn {
+  background: #003380;
+  color: white;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.add_post_container .add_post_wrapper .form .add_posts_btn .save_btn:hover {
+  background: #012253;
+}
+
+.add_post_container .add_post_wrapper .form .add_posts_btn .preview_btn {
+  background: purple;
+  color: white;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.add_post_container .add_post_wrapper .form .add_posts_btn .preview_btn:hover {
+  background: #5c015c;
+}
+/*# sourceMappingURL=AddPost.css.map */

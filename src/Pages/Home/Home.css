@@ -2,7 +2,6 @@
 * {
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -17,6 +16,41 @@ span {
 .router_link {
   text-decoration: none;
   color: initial;
+  border: none;
+  outline: none;
+  background-color: transparent !important;
+  background: none;
+  -webkit-tap-highlight-color: none !important;
+}
+
+.router_link:hover {
+  text-decoration: none;
+  color: initial;
+  border: none;
+  outline: none;
+  background-color: transparent !important;
+  background: none;
+  -webkit-tap-highlight-color: none !important;
+}
+
+.router_link:visited {
+  text-decoration: none;
+  color: initial;
+  border: none;
+  outline: none;
+  background-color: transparent !important;
+  background: none;
+  -webkit-tap-highlight-color: none !important;
+}
+
+.router_link:focus {
+  text-decoration: none;
+  color: initial;
+  border: none;
+  outline: none;
+  background-color: transparent !important;
+  background: none;
+  -webkit-tap-highlight-color: none !important;
 }
 
 .container {
@@ -24,6 +58,7 @@ span {
   margin: 0 auto;
   height: auto;
   margin-top: 10px;
+  overflow-x: hidden;
 }
 
 .container .container-wrapper {

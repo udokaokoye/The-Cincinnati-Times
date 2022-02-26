@@ -6,6 +6,14 @@
   margin-top: 40px;
 }
 
+.news_category_container .Category_Name {
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
 .news_category_container .news_category_wrapper {
   width: 100%;
   height: auto;
@@ -42,8 +50,11 @@
 .news_category_container .m_content .category_showcase .showcase_top .showcase_main {
   width: 100%;
   height: 100%;
-  background-color: gold;
   position: relative;
+}
+
+.news_category_container .m_content .category_showcase .showcase_top .showcase_main .mobile_showcase_info {
+  display: none;
 }
 
 .news_category_container .m_content .category_showcase .showcase_top .showcase_main .show_main_media {
@@ -153,203 +164,6 @@
   cursor: pointer;
 }
 
-.news_category_container .right_bar .covid_tracker .covid_tracker_bar {
-  font-family: "Roboto";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.news_category_container .right_bar .covid_tracker .covid_tracker_bar h3 {
-  font-family: "Roboto";
-  font-weight: bold;
-  font-size: 17px;
-}
-
-.news_category_container .right_bar .covid_tracker .covid_tracker_content .covid_tracker_cases,
-.news_category_container .right_bar .covid_tracker .covid_tracker_content .covid_tracker_deaths {
-  font-family: "Roboto";
-  font-weight: 500;
-  width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 17px;
-}
-
-.news_category_container .right_bar .covid_tracker .covid_tracker_content .covid_tracker_cases:first-child,
-.news_category_container .right_bar .covid_tracker .covid_tracker_content .covid_tracker_deaths:first-child {
-  color: purple;
-}
-
-.news_category_container .right_bar .covid_tracker .covid_tracker_content .covid_tracker_vaccine h3 {
-  font-family: "Roboto";
-  font-weight: bold;
-  font-size: 14px;
-  color: purple;
-  margin-bottom: 10px;
-}
-
-.news_category_container .right_bar .covid_tracker .covid_tracker_content .covid_tracker_vaccine small {
-  font-family: "Roboto";
-  font-size: 10px;
-  font-style: italic;
-  color: #666666;
-}
-
-.news_category_container .right_bar .covid_tracker .covid_tracker_content .covid_tracker_vaccine .find_shot {
-  font-size: 14px;
-  margin-top: 15px;
-  font-weight: bold;
-  color: purple;
-}
-
-.news_category_container .right_bar .covid_tracker .covid_tracker_content .covid_tracker_vaccine .vaccine_toll {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.news_category_container .right_bar .covid_tracker .covid_tracker_content .covid_tracker_vaccine .vaccine_toll .figure {
-  width: 10%;
-  font-size: 15px;
-  color: purple;
-}
-
-.news_category_container .right_bar .covid_tracker .covid_tracker_content .covid_tracker_vaccine .vaccine_toll .toll_color_code {
-  width: 87%;
-  height: 17px;
-  background-color: #c2c2c2;
-  margin-left: 8px;
-  position: relative;
-}
-
-.news_category_container .right_bar .covid_tracker .covid_tracker_content .covid_tracker_vaccine .vaccine_toll .toll_color_code .ovrly_cnt {
-  position: absolute;
-  height: inherit;
-  width: 50%;
-  background-color: purple;
-}
-
-.news_category_container .right_bar .right_bar_subscribe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.news_category_container .right_bar .right_bar_subscribe h3 {
-  font-size: 17px;
-  font-family: "Roboto";
-  font-weight: bold;
-}
-
-.news_category_container .right_bar .right_bar_subscribe .subscribe_intro {
-  font-weight: bold;
-  text-align: center;
-}
-
-.news_category_container .right_bar .right_bar_subscribe .right_bar_subscribe_input {
-  width: 100%;
-  height: 40px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-top: 15px;
-  border-radius: 4px;
-  border: 1px solid #d6d6d6;
-  padding-left: 10px;
-}
-
-.news_category_container .right_bar .right_bar_subscribe .right_bar_subscribe_input:focus {
-  outline: none;
-}
-
-.news_category_container .right_bar .right_bar_subscribe .right_bar_subscribe_btn {
-  width: 50%;
-  height: 35px;
-  margin-top: 10px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  color: white;
-  background-color: purple;
-  border-radius: 4px;
-  border: none;
-}
-
-.news_category_container .right_bar .right_bar_weather .weather_br_location {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.news_category_container .right_bar .right_bar_weather .weather_br_location h3 {
-  font-family: "Roboto";
-  font-size: 17px;
-}
-
-.news_category_container .right_bar .right_bar_weather .weather_br_location span {
-  font-weight: bold;
-}
-
-.news_category_container .right_bar .right_vaccine_finder h3 {
-  font-family: "Roboto";
-  font-weight: bold;
-  font-size: 17px;
-}
-
-.news_category_container .right_bar .right_vaccine_finder p {
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.news_category_container .right_bar .right_vaccine_finder .zipcode_field {
-  width: 100%;
-  height: 40px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-top: 15px;
-  border-radius: 4px;
-  border: 1px solid #d6d6d6;
-  padding-left: 10px;
-}
-
-.news_category_container .right_bar .right_vaccine_finder .zipcode_field:focus {
-  outline: none;
-}
-
-.news_category_container .right_bar .right_vaccine_finder button {
-  width: 50%;
-  height: 35px;
-  margin-top: 10px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  color: white;
-  background-color: purple;
-  border-radius: 4px;
-  border: none;
-}
-
 .news_category_container .right_bar .right_ads_cnt {
   width: 100%;
   height: 60vh;
@@ -372,5 +186,68 @@
   background-size: cover;
   top: 0;
   left: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .news_category_container {
+    width: 100%;
+  }
+  .news_category_container .Category_Name {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 60px;
+    text-transform: capitalize;
+  }
+  .news_category_container .news_category_wrapper {
+    margin: 0 auto;
+    max-width: 95%;
+  }
+  .news_category_container .news_category_wrapper .m_content {
+    width: 100%;
+  }
+  .news_category_container .news_category_wrapper .m_content .category_showcase .showcase_top .showcase_main .mobile_showcase_info {
+    display: block;
+    font-family: 'PT Serif';
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  .news_category_container .news_category_wrapper .m_content .category_showcase .showcase_top .showcase_main .gradient {
+    display: none;
+  }
+  .news_category_container .right_bar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .news_category_container .Category_Name {
+    font-size: 50px;
+  }
+  .news_category_container .news_category_wrapper .m_content .category_showcase .showcase_bottom {
+    display: block;
+  }
+  .news_category_container .news_category_wrapper .m_content .category_showcase .showcase_bottom .btm_news_1,
+  .news_category_container .news_category_wrapper .m_content .category_showcase .showcase_bottom .btm_news_2,
+  .news_category_container .news_category_wrapper .m_content .category_showcase .showcase_bottom .btm_news_3 {
+    padding: 0;
+    border-left: none !important;
+  }
+  .news_category_container .news_category_wrapper .m_content .category_showcase .showcase_bottom .btm_news_1 p,
+  .news_category_container .news_category_wrapper .m_content .category_showcase .showcase_bottom .btm_news_2 p,
+  .news_category_container .news_category_wrapper .m_content .category_showcase .showcase_bottom .btm_news_3 p {
+    font-family: 'Roboto';
+    font-weight: bold;
+  }
+  .news_category_container .news_category_wrapper .m_content .category_showcase .showcase_bottom .btm_news_1:first-child, .news_category_container .news_category_wrapper .m_content .category_showcase .showcase_bottom .btm_news_1:nth-child(2),
+  .news_category_container .news_category_wrapper .m_content .category_showcase .showcase_bottom .btm_news_2:first-child,
+  .news_category_container .news_category_wrapper .m_content .category_showcase .showcase_bottom .btm_news_2:nth-child(2),
+  .news_category_container .news_category_wrapper .m_content .category_showcase .showcase_bottom .btm_news_3:first-child,
+  .news_category_container .news_category_wrapper .m_content .category_showcase .showcase_bottom .btm_news_3:nth-child(2) {
+    border-bottom: #d6d6d6 1px solid;
+  }
+  .news_category_container .right_bar {
+    display: none;
+  }
 }
 /*# sourceMappingURL=NewsCategory.css.map */
